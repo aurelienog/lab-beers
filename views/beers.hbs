@@ -1,0 +1,11 @@
+<h1>Beer</h1>
+
+<div class="card">
+  <ul class="list-group list-group-flush">
+    {{#each beersFromApi as |beer|}}
+    <li class="list-group-item">
+      {{beer.name}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
