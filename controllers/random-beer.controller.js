@@ -1,3 +1,10 @@
 module.exports.randomBeer = (req, res) => {
-  res.render('random-beer');
+  fetch("https://ih-beers-api2.herokuapp.com/beers/random")
+    .then(response => response.json())
+    .then(responseFromAPI => {
+      console.log(responseFromAPI )
+      res.render('random-beer', { responseFromAPI });
+    })
+    .catch(error => console.log(error));
+  
 };

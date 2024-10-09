@@ -1,11 +1,19 @@
-<h1>Beer</h1>
+<h1>All the beers !</h1>
 
-<div class="card">
-  <ul class="list-group list-group-flush">
+<div class="beersContainer">
     {{#each beersFromApi as |beer|}}
-    <li class="list-group-item">
-      {{beer.name}}
-    </li>
+      <div class="beerCard">
+        <h2>
+          {{beer.name}} 
+        </h2>
+        <img src = {{beer.image_url}}>
+        <h3>
+          {{beer.tagline}} 
+        </h3>
+        <p>
+          {{beer.description}}
+        </p>
+      </div>
     {{/each}}
-  </ul>
+  
 </div>
