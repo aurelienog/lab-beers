@@ -3,7 +3,7 @@ module.exports.randomBeer = (req, res) => {
     .then(response => response.json())
     .then(responseFromAPI => {
       console.log(responseFromAPI )
-      res.render('random-beer', { responseFromAPI });
+      res.render('random-beer', { beer : responseFromAPI });
     })
     .catch(error => console.log(error));
   

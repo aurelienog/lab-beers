@@ -3,16 +3,7 @@
 <div class="beersContainer">
     {{#each beersFromApi as |beer|}}
       <div class="beerCard">
-        <h2>
-          {{beer.name}} 
-        </h2>
-        <img src = {{beer.image_url}}>
-        <h3>
-          {{beer.tagline}} 
-        </h3>
-        <p>
-          {{beer.description}}
-        </p>
+        {{> beerpartial beer=beer}}
       </div>
     {{/each}}
   

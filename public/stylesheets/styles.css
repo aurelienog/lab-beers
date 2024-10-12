@@ -78,12 +78,13 @@ img {
   margin: 20px;
 }
 .randomContainer{
+  
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   border-style:dashed;
-  width: 70%;
+  width: 50%;
   margin: 2em;
-  padding: 2em;
+  padding-bottom: 2em;
   
   ;
 }
